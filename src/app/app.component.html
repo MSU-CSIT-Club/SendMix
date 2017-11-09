@@ -1,0 +1,88 @@
+<div [class.app-dark-theme]="true">
+    <mat-sidenav-container fullscreen>
+
+        <!-- Contains all HTML in the Side navigation -->
+        <mat-sidenav #sidenav mode="over" class="app-sidenav" >
+            <mat-toolbar color="primary">
+                SendMix.com
+
+                <span class="app-toolbar-filler"></span>
+
+                <mat-icon (click)="sidenav.toggle()">close</mat-icon>
+            </mat-toolbar>
+            
+            Sidenav
+        </mat-sidenav>
+
+        <!-- The Navigation button at the top of the application -->
+        <mat-toolbar color="primary">
+            <button mat-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button> 
+
+            <div name="toolbar-title">
+                SendMix.com
+            </div>
+        </mat-toolbar>
+
+        <!-- Main content of the website -->
+        <div class="app-content">
+            <mat-card>
+                <mat-form-field class="example-form-field">
+                    <input matInput type="text" placeholder="Mix Title" [(ngModel)]="mixTitle"/>
+                    <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-form-field>
+                
+                <mat-form-field class="example-form-field">
+                    <input matInput type="text" placeholder="Mix Author" [(ngModel)]="mixAuthor"/>
+                    <button mat-button *ngIf="mixAuthor" matSuffix mat-icon-button aria-label="Clear" (click)="mixAuthor=''">
+                        <mat-icon>close</mat-icon>
+                    </button>
+                </mat-form-field>
+
+                <mat-checkbox [(ngModel)]="writeProtection">
+                    Write-Protection
+                </mat-checkbox>
+                <br><br>
+                        
+                <mat-grid-list cols="3" rowHeight="4:1">
+                    <mat-grid-tile>Link</mat-grid-tile>
+                    <mat-grid-tile>Title</mat-grid-tile>
+                    <mat-grid-tile>Comment</mat-grid-tile>
+                </mat-grid-list>
+
+                <mat-grid-list cols="3" rowHeight="4:1">
+                    <mat-grid-tile>
+                        <mat-form-field class="example-form-field">
+                            <input matInput type="text" [(ngModel)]="mixTitle"/>
+                            <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </mat-grid-tile>
+
+                    <mat-grid-tile>
+                        <mat-form-field class="example-form-field">
+                            <input matInput type="text" [(ngModel)]="mixTitle"/>
+                            <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </mat-grid-tile>
+
+                    <mat-grid-tile>
+                        <mat-form-field class="example-form-field">
+                            <input matInput type="text" [(ngModel)]="mixTitle"/>
+                            <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                                <mat-icon>close</mat-icon>
+                            </button>
+                        </mat-form-field>
+                    </mat-grid-tile>
+                </mat-grid-list>
+            </mat-card>
+        </div>
+
+    </mat-sidenav-container>
+</div>
