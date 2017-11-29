@@ -9,7 +9,7 @@ import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
 
 import { MaterialImportModule } from './material-import.module';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app.component';
 
 @NgModule({
   declarations: [
