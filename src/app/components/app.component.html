@@ -6,8 +6,9 @@
             SendMix.com
         </div>
 
-        <div class="settings-icon-div" (click)="openSettings()">
-            <mat-icon class="settings-icon">
+                <!-- (click)="openSettings()" -->
+        <div class="settings-icon-div" >
+            <mat-icon class="settings-icon" matTooltip="Settings" matTooltipDelay="150" matTooltipHideDelay="50">
                 settings
             </mat-icon>
         </div>
@@ -16,22 +17,22 @@
     <!-- Main content of the website -->
     <div class="app-content">
         <mat-card>
-            <mat-form-field class="top-row-elements">
+            <mat-form-field class="top-row-elements" color="accent"> 
                 <input matInput type="text" placeholder="Mix Title" [(ngModel)]="mixTitle"/>
                 <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                     <mat-icon>close</mat-icon>
                 </button>
             </mat-form-field>
             
-            <mat-form-field class="top-row-elements">
+            <mat-form-field class="top-row-elements" color="accent">
                 <input matInput type="text" placeholder="Mix Author" [(ngModel)]="mixAuthor"/>
                 <button mat-button *ngIf="mixAuthor" matSuffix mat-icon-button aria-label="Clear" (click)="mixAuthor=''">
                     <mat-icon>close</mat-icon>
                 </button>
             </mat-form-field>
 
-            <mat-checkbox class="top-row-elements" [(ngModel)]="writeProtection">
-                Write-Protection
+            <mat-checkbox class="write-protection-checkbox" [(ngModel)]="writeProtection" matTooltip="Write Protection" matTooltipPosition="above" matTooltipDelay="50" matTooltipHideDelay="50">
+                
             </mat-checkbox>
             <br><br>
                     
@@ -42,8 +43,8 @@
             </mat-grid-list>
 
             <mat-grid-list cols="3" rowHeight="4:1">
-                <mat-grid-tile>
-                    <mat-form-field class="example-form-field">
+                <mat-grid-tile class="grid-tile">
+                    <mat-form-field class="example-form-field" color="accent">
                         <input matInput type="text" [(ngModel)]="mixTitle"/>
                         <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                             <mat-icon>close</mat-icon>
@@ -51,8 +52,8 @@
                     </mat-form-field>
                 </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <mat-form-field class="example-form-field">
+                <mat-grid-tile class="grid-tile">
+                    <mat-form-field class="example-form-field" color="accent">
                         <input matInput type="text" [(ngModel)]="mixTitle"/>
                         <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                             <mat-icon>close</mat-icon>
@@ -60,8 +61,8 @@
                     </mat-form-field>
                 </mat-grid-tile>
 
-                <mat-grid-tile>
-                    <mat-form-field class="example-form-field">
+                <mat-grid-tile class="grid-tile">
+                    <mat-form-field class="example-form-field" color="accent">
                         <input matInput type="text" [(ngModel)]="mixTitle"/>
                         <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                             <mat-icon>close</mat-icon>

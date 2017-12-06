@@ -18,6 +18,7 @@
   cursor: pointer;
   margin-left: auto;
   margin-right: 0px;
+  padding-top: 9px;
 }
 
 .settings-icon:hover {
@@ -29,4 +30,20 @@
 }
 
 .top-row-elements {
+  width: 46%;
+  padding-right: 2%;
+}
+
+mat-card {
+  border-radius: 0px;
+}
+
+
+
+.write-protection-checkbox {
+  
+}
+
+.grid-tile {
+  width: 33%;
 }
