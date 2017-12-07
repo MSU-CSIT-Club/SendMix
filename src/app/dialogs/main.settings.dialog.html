@@ -1,3 +1,22 @@
-<div>
-	<button>asdfasdf</button>
+<div [class.app-dark-theme]="true">
+	this is a test dialog component
+	<br>
+	<br>
+	<br>
+
+	<button mat-raised-button color="primary">
+		Test
+	</button>
+	<br>
+	<br>
+
+	<mat-form-field class="example-form-field">
+		<input matInput type="text" placeholder="Clearable input">
+		<button mat-button matSuffix mat-icon-button aria-label="Clear">
+			<mat-icon>
+				close
+			</mat-icon>
+		</button>
+	</mat-form-field>
+	<br>
 </div>

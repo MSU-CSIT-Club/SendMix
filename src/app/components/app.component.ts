@@ -16,7 +16,7 @@ export class AppComponent {
 
   constructor(private _dialog: MatDialog) {}
 
-  /*
+  
   openSettings() {
     const dialogRef = this._dialog.open(DialogContentComponent);
 
@@ -24,10 +24,10 @@ export class AppComponent {
         // do things after the dialog closes
     });
   }
-  */
+  
 }
 
-/*
+
 // main settings dialog
 @Component({
   selector: 'app-root',
@@ -38,4 +38,3 @@ export class DialogContentComponent {
   constructor( @Optional() public dialogRef: MatDialogRef<DialogContentComponent>) { }
 } 
 
-*/

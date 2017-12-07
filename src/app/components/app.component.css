@@ -25,25 +25,45 @@
   color: #FFF9C4;
 }
 
-.toolbar-title{
+.toolbar-title {
   cursor: default;
 }
 
+.top-row {
+  width: 100%;
+}
+
 .top-row-elements {
-  width: 46%;
-  padding-right: 2%;
-}
-
-mat-card {
-  border-radius: 0px;
-}
-
-
-
-.write-protection-checkbox {
-  
+  width: 45%;
+  padding-right: 1%;
 }
 
 .grid-tile {
   width: 33%;
+}
+
+mat-card {
+  border-radius: 0px;
+  padding: 20px;
+}
+
+mat-grid-list {
+  width: 100%;
+}
+
+@media (max-width: 600px)  {
+  mat-toolbar {
+    height: 64px;
+  }
+
+  /deep/.mat-toolbar-row {
+    height: 64px !important;
+  }
+}
+
+@media (max-width: 405px) {
+  .top-row-elements {
+    width: 43%;
+    padding-right: 1%;
+  }
 }

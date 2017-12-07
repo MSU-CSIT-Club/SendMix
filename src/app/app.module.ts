@@ -9,11 +9,12 @@ import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
 
 import { MaterialImportModule } from './material-import.module';
 
-import { AppComponent } from './components/app.component';
+import { AppComponent, DialogContentComponent } from './components/app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DialogContentComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +27,7 @@ import { AppComponent } from './components/app.component';
     {provide: MATERIAL_COMPATIBILITY_MODE, useValue: true},
     // ...
   ],
+  entryComponents: [DialogContentComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
