@@ -37,4 +37,3 @@ export class AppComponent {
 export class DialogContentComponent {
   constructor( @Optional() public dialogRef: MatDialogRef<DialogContentComponent>) { }
 } 
-

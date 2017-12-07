@@ -8,7 +8,8 @@ import {
     MatInputModule,
     MatGridListModule,
     MatDialogModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatSidenavModule
 } from '@angular/material';
 
 @NgModule({
@@ -21,7 +22,8 @@ import {
         MatInputModule,
         MatGridListModule,
         MatDialogModule,
-        MatTooltipModule
+        MatTooltipModule,
+        MatSidenavModule
     ],
     exports: [
         MatToolbarModule,
@@ -32,7 +34,8 @@ import {
         MatInputModule,
         MatGridListModule,
         MatDialogModule,
-        MatTooltipModule
+        MatTooltipModule,
+        MatSidenavModule
     ]
 })
 export class MaterialImportModule {

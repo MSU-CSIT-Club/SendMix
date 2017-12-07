@@ -1,0 +1,7 @@
+/deep/.cdk-overlay-dark-backdrop {
+	background: rgba(0, 0, 0, 0.1) !important;
+}
+
+/deep/.cdk-overlay-backdrop.cdk-overlay-backdrop-showing { 
+	opacity: 1 !important;
+}

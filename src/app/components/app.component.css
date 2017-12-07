@@ -1,3 +1,7 @@
+.sidenav-container {
+  height: 100%;
+}
+
 .app-sidenav {
   min-width: 230px;
 }
@@ -7,11 +11,8 @@
 }
 
 .app-content {
-  height: 100%;
-}
-
-/deep/ .app-dark-theme .mat-drawer-backdrop.mat-drawer-shown{
-	background-color: rgba(0, 0, 0, 0.3)
+  padding: 10px;
+  height: calc(100% - 84px);
 }
 
 .settings-icon-div {
@@ -43,7 +44,7 @@
 }
 
 mat-card {
-  border-radius: 0px;
+  border-radius: 1px;
   padding: 20px;
 }
 
