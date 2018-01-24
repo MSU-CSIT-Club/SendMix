@@ -5,3 +5,7 @@
 /deep/.cdk-overlay-backdrop.cdk-overlay-backdrop-showing { 
 	opacity: 1 !important;
 }
+
+.settings-dialog-container {
+	text-color: white;
+}
