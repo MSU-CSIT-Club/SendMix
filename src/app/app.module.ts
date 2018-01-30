@@ -7,6 +7,7 @@ import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MATERIAL_COMPATIBILITY_MODE} from '@angular/material';
 
+import {OverlayContainer} from '@angular/cdk/overlay';
 import { MaterialImportModule } from './material-import.module';
 
 import { AppComponent, DialogContentComponent } from './components/app.component';
@@ -30,4 +31,11 @@ import { AppComponent, DialogContentComponent } from './components/app.component
   entryComponents: [DialogContentComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule 
+{
+    constructor(overlayContainer: OverlayContainer) 
+    {
+        overlayContainer.getContainerElement()
+            .classList.add('app-dark-theme');
+    }
+}
