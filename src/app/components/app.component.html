@@ -49,7 +49,7 @@
                     <mat-grid-tile class="grid-tile">
                         <mat-form-field class="example-form-field" color="accent">
                             <input matInput type="text" [(ngModel)]="placeholderLink"/>
-                            <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                            <button mat-button *ngIf="placeholderLink" matSuffix mat-icon-button aria-label="Clear" (click)="placeholderLink=''">
                                 <mat-icon>close</mat-icon>
                             </button>
                         </mat-form-field>
@@ -58,7 +58,7 @@
                     <mat-grid-tile class="grid-tile">
                         <mat-form-field class="example-form-field" color="accent">
                             <input matInput type="text" [(ngModel)]="placeholderTitle"/>
-                            <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                            <button mat-button *ngIf="placeholderTitle" matSuffix mat-icon-button aria-label="Clear" (click)="placeholderTitle=''">
                                 <mat-icon>close</mat-icon>
                             </button>
                         </mat-form-field>
@@ -67,7 +67,7 @@
                     <mat-grid-tile class="grid-tile">
                         <mat-form-field class="example-form-field" color="accent">
                             <input matInput type="text" [(ngModel)]="placeholderComment"/>
-                            <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
+                            <button mat-button *ngIf="placeholderComment" matSuffix mat-icon-button aria-label="Clear" (click)="placeholderComment=''">
                                 <mat-icon>close</mat-icon>
                             </button>
                         </mat-form-field>

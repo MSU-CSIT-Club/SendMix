@@ -9,6 +9,7 @@ import { MatDialog, MatDialogRef } from '@angular/material';
 })
 export class AppComponent {
 
+  settingsPlaceholder: string;
   mixTitle: string;
   mixAuthor: string;
   placeholderLink: string;
