@@ -11,6 +11,9 @@ export class AppComponent {
 
   mixTitle: string;
   mixAuthor: string;
+  placeholderLink: string;
+  placeholderTitle: string;
+  placeholderComment: string;
   writeProtection: boolean;
   rowsOfSongs: number = 1;
 

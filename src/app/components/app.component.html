@@ -48,7 +48,7 @@
                 <mat-grid-list cols="3" rowHeight="5:1">
                     <mat-grid-tile class="grid-tile">
                         <mat-form-field class="example-form-field" color="accent">
-                            <input matInput type="text" [(ngModel)]="mixTitle"/>
+                            <input matInput type="text" [(ngModel)]="placeholderLink"/>
                             <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                                 <mat-icon>close</mat-icon>
                             </button>
@@ -57,7 +57,7 @@
 
                     <mat-grid-tile class="grid-tile">
                         <mat-form-field class="example-form-field" color="accent">
-                            <input matInput type="text" [(ngModel)]="mixTitle"/>
+                            <input matInput type="text" [(ngModel)]="placeholderTitle"/>
                             <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                                 <mat-icon>close</mat-icon>
                             </button>
@@ -66,7 +66,7 @@
 
                     <mat-grid-tile class="grid-tile">
                         <mat-form-field class="example-form-field" color="accent">
-                            <input matInput type="text" [(ngModel)]="mixTitle"/>
+                            <input matInput type="text" [(ngModel)]="placeholderComment"/>
                             <button mat-button *ngIf="mixTitle" matSuffix mat-icon-button aria-label="Clear" (click)="mixTitle=''">
                                 <mat-icon>close</mat-icon>
                             </button>
